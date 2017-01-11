@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.homepage    = "https://github.com/upenn-libraries/ezwadl"
   s.summary     = "The EzWadl gem provides easy access to the resources defined by a WADL."
   s.description = "The EzWadl gem provides easy access to the resources defined by a WADL."
-  s.license     = "Apache 2.0"
+  s.license     = "Apache License 2.0"
 
   s.add_dependency "nokogiri", "~> 1.6"
   s.add_dependency "httparty", "~> 0.14"
