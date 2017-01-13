@@ -14,6 +14,9 @@ module EzWadl
           add_methods(r)
           add_resources(r)
         }
+				
+        yield(top_resources) if block_given?
+        top_resources
       end
       
       private
