@@ -5,7 +5,7 @@ module EzWadl
   
     class << self
       def parse(wadl)
-        doc = Nokogiri::XML open(wadl)
+        doc = File.open(wadl) { |f| Nokogiri::XML f }
         top_resources = uris(doc).map {|xml|
           Resource.new(xml)
         }
