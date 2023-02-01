@@ -16,7 +16,7 @@ module EzWadl
     end
   
     def uri
-      URI.join(parent&.uri.to_s || '', URI.escape(path + '/'))
+      URI.join(parent&.uri.to_s || '', CGI.escape(path + '/'))
     end
   
     def uri_template(data)
